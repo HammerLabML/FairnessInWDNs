@@ -1,0 +1,283 @@
+<ScenarioCollection>
+    <Scenario 
+        name="Scenario1"
+        network="../models/Net1.inp" 
+        iterations="30"
+        timeStep="300">
+        <SensorConfigs>
+            <SensorConfig
+                name="Sensors1">
+                <PressureSensors>
+                    <Sensor id="n21"/>
+                    <Sensor id="n22"/>
+                    <Sensor id="n23"/>
+                    <Sensor id="n31"/>
+                </PressureSensors>
+                <FlowSensors>
+                    <Sensor id="l10"/>
+                    <Sensor id="l21"/>
+                    <Sensor id="l22"/>
+                </FlowSensors>
+                <DemandSensors>
+                    <Sensor id="n21"/>
+                    <Sensor id="n22"/>
+                    <Sensor id="n23"/>
+                    <Sensor id="n32"/>
+                </DemandSensors>
+            </SensorConfig>
+            <SensorConfig
+                name="Sensors2">
+                <PressureSensors>
+                    <Sensor id="n10"/>
+                    <Sensor id="n11"/>
+                    <Sensor id="n12"/>
+                    <Sensor id="n13"/>
+                    <Sensor id="n31"/>
+                </PressureSensors>
+                <FlowSensors>
+                    <Sensor id="l10"/>
+                    <Sensor id="l11"/>
+                    <Sensor id="l12"/>
+                </FlowSensors>
+                <DemandSensors>
+                    <Sensor id="n10"/>
+                    <Sensor id="n11"/>
+                    <Sensor id="n12"/>
+                    <Sensor id="n13"/>
+                    <Sensor id="n32"/>
+                </DemandSensors>
+            </SensorConfig>
+        </SensorConfigs>
+        <SensorfaultConfigs>
+            <SensorfaultConfig
+                name="GT">
+            </SensorfaultConfig>
+            <SensorfaultConfig
+                name="Sensorfaults1">
+                <Sensorfault
+                    partId="l10"
+                    sensorType="flow"
+                    start="5"
+                    end="10"
+                    faultType="stuckzero"/>
+                <Sensorfault
+                    partId="n31"
+                    sensorType="pressure"
+                    start="5"
+                    end="10"
+                    faultType="constant"
+                    faultParam="100"/>
+                <Sensorfault
+                    partId="n32"
+                    sensorType="demand"
+                    start="5"
+                    end="10"
+                    faultType="normal"
+                    faultParam="5"/>
+            </SensorfaultConfig>
+            <SensorfaultConfig
+                name="Sensorfaults2">
+                <Sensorfault
+                    partId="l10"
+                    sensorType="flow"
+                    start="5"
+                    end="10"
+                    faultType="stuckzero"/>
+                <Sensorfault
+                    partId="n31"
+                    sensorType="pressure"
+                    start="5"
+                    end="10"
+                    faultType="percentage"
+                    faultParam="1.3"/>
+                <Sensorfault
+                    partId="n32"
+                    sensorType="demand"
+                    start="5"
+                    end="10"
+                    faultType="drift"
+                    faultParam="0.1"/>
+            </SensorfaultConfig>
+        </SensorfaultConfigs>
+        <LeakConfigs>
+            <LeakConfig
+                name="None">
+            </LeakConfig>
+            <LeakConfig
+                name="Leaks1">
+                <Leak
+                    pipeId="l10"
+                    type="abrupt"
+                    diameter="0.1"
+                    start="5"
+                    end="15"/>
+                <Leak
+                    pipeId="l11"
+                    type="incipient"
+                    diameter="0.05"
+                    start="5"
+                    end="16"
+                    peak="8"/>
+            </LeakConfig>
+            <LeakConfig
+                name="2Same">
+                <Leak
+                    pipeId="l10"
+                    type="abrupt"
+                    diameter="0.1"
+                    start="5"
+                    end="15"/>
+                <Leak
+                    pipeId="l11"
+                    type="incipient"
+                    diameter="0.05"
+                    start="5"
+                    end="16"
+                    peak="8"/>
+                <Leak
+                    nodeId="n32"
+                    type="incipient"
+                    diameter="0.1"
+                    start="5"
+                    peak="5"
+                    end="7"/>
+                <Leak
+                    nodeId="n32"
+                    type="incipient"
+                    diameter="0.1"
+                    start="10"
+                    peak="10"
+                    end="15"/>
+            </LeakConfig>
+        </LeakConfigs>
+    </Scenario>
+    <Scenario 
+        name="Scenario2"
+        network="../models/Net1.inp" 
+        iterations="15"
+        timeStep="600">
+        <SensorConfigs>
+            <SensorConfig
+                name="Sensors1">
+                <PressureSensors>
+                    <Sensor id="n21"/>
+                    <Sensor id="n22"/>
+                    <Sensor id="n23"/>
+                    <Sensor id="n31"/>
+                </PressureSensors>
+                <FlowSensors>
+                    <Sensor id="l10"/>
+                    <Sensor id="l21"/>
+                    <Sensor id="l22"/>
+                </FlowSensors>
+                <DemandSensors>
+                    <Sensor id="n21"/>
+                    <Sensor id="n22"/>
+                    <Sensor id="n23"/>
+                    <Sensor id="n32"/>
+                </DemandSensors>
+            </SensorConfig>
+            <SensorConfig
+                name="Sensors2">
+                <PressureSensors>
+                    <Sensor id="n10"/>
+                    <Sensor id="n11"/>
+                    <Sensor id="n12"/>
+                    <Sensor id="n13"/>
+                    <Sensor id="n31"/>
+                </PressureSensors>
+                <FlowSensors>
+                    <Sensor id="l10"/>
+                    <Sensor id="l11"/>
+                    <Sensor id="l12"/>
+                </FlowSensors>
+                <DemandSensors>
+                    <Sensor id="n10"/>
+                    <Sensor id="n11"/>
+                    <Sensor id="n12"/>
+                    <Sensor id="n13"/>
+                    <Sensor id="n32"/>
+                </DemandSensors>
+            </SensorConfig>
+        </SensorConfigs>
+        <SensorfaultConfigs>
+            <SensorfaultConfig
+                name="GT">
+            </SensorfaultConfig>
+            <SensorfaultConfig
+                name="Sensorfaults1">
+                <Sensorfault
+                    partId="l10"
+                    sensorType="flow"
+                    start="5"
+                    end="10"
+                    faultType="stuckzero"/>
+                <Sensorfault
+                    partId="n31"
+                    sensorType="pressure"
+                    start="5"
+                    end="10"
+                    faultType="constant"
+                    faultParam="100"/>
+                <Sensorfault
+                    partId="n32"
+                    sensorType="demand"
+                    start="5"
+                    end="10"
+                    faultType="normal"
+                    faultParam="5"/>
+            </SensorfaultConfig>
+            <SensorfaultConfig
+                name="Sensorfaults2">
+                <Sensorfault
+                    partId="l10"
+                    sensorType="flow"
+                    start="5"
+                    end="10"
+                    faultType="stuckzero"/>
+                <Sensorfault
+                    partId="n31"
+                    sensorType="pressure"
+                    start="5"
+                    end="10"
+                    faultType="percentage"
+                    faultParam="1.3"/>
+                <Sensorfault
+                    partId="n32"
+                    sensorType="demand"
+                    start="5"
+                    end="10"
+                    faultType="drift"
+                    faultParam="0.1"/>
+            </SensorfaultConfig>
+        </SensorfaultConfigs>
+        <LeakConfigs>
+            <LeakConfig
+                name="None">
+            </LeakConfig>
+            <LeakConfig
+                name="Leaks1">
+                <Leak
+                    pipeId="l10"
+                    type="abrupt"
+                    diameter="0.1"
+                    start="5"
+                    end="15"/>
+                <Leak
+                    pipeId="l11"
+                    type="incipient"
+                    diameter="0.05"
+                    start="5"
+                    end="16"
+                    peak="8"/>
+                <Leak
+                    nodeId="n32"
+                    type="incipient"
+                    diameter="0.05"
+                    start="5"
+                    end="16"
+                    peak="8"/>
+            </LeakConfig>
+        </LeakConfigs>
+    </Scenario>
+</ScenarioCollection>

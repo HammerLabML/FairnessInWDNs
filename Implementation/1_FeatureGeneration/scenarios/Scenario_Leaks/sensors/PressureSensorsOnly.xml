@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='ASCII'?>
+<SensorConfig name="PressureSensorsOnly">
+                <PressureSensors>
+                    <Sensor id="3"/>          
+                    <Sensor id="10"/>          
+                    <Sensor id="23"/>
+                    <Sensor id="25"/>
+                    <Sensor id="13"/>          
+                    <Sensor id="14"/>          
+                    <Sensor id="22"/>
+                    <Sensor id="29"/>
+                </PressureSensors>
+                <FlowSensors>                   </FlowSensors>
+                <DemandSensors>
+                </DemandSensors>
+            </SensorConfig>
+        
