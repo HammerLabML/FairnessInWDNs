@@ -1,4 +1,4 @@
-# Fairness-Enhancing Ensemble Classification in Water Distribution Networks
+# Fairness-enhancing Ensemble Classification in Water Distribution Networks
 This repository contains the implementation of the methods proposed in the paper ["Fairness-enhancing Ensemble Classification in Water Distribution Networks"](Paper.pdf) by Janine Strotherm and Barbara Hammer.
 
 ## Abstract
