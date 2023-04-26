@@ -1,5 +1,5 @@
-# Fairness-enhancing Ensemble Classification in Water Distribution Networks
-This repository contains the implementation of the methods proposed in the paper ["Fairness-enhancing Ensemble Classification in Water Distribution Networks"](Paper.pdf) by Janine Strotherm and Barbara Hammer.
+# Fairness-Enhancing Ensemble Classification in Water Distribution Networks
+This repository contains the implementation of the methods proposed in the paper ["Fairness-Enhancing Ensemble Classification in Water Distribution Networks"](Paper.pdf) by Janine Strotherm and Barbara Hammer.
 
 ## Abstract
 As relevant negative examples such as the future criminal detection software show, fairness of AI-based and social domain affecting decision support tools constitutes an important area of research. In this contribution, we investigate the applications of AI to socioeconomically relevant infrastructures such as those of water distribution networks (WDNs), where fairness issues have yet to gain a foothold. To establish the notion of fairness in this domain, we propose an appropriate definition of protected groups and group fairness in WDNs as an extension of existing definitions. We demonstrate that typical methods for the detection of leakages in WDNs are unfair in this sense. Further, we therefore propose a remedy to increase the fairness which can be applied even to non-differentiable ensemble classification methods as used in this context.
