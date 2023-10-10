@@ -17,7 +17,7 @@ in the command line generates the `scenarios` folder which is used in the `2_Dat
 All requirements for the whole project are listed in the `Implementation/requirements.txt` file. Note that the requirements listed in the `Implementation/1_FeatureGeneration/requirements.txt` file correspond to the requirements of the previous version of the [atmn](https://github.com/HammerLabML/atmn) package only.
 
 ## How To Cite
-You can cite corresponding paper using the following BibTex entry:
+You can cite the corresponding paper using the following BibTex entry:
 ```
 @inproceedings{
     Strotherm2023FairClassification,
