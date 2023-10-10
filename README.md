@@ -18,7 +18,7 @@ All requirements for the whole project are listed in the `Implementation/require
 
 ## How To Cite
 You can cite corresponding paper using the following BibTex entry:
-"""
+```
 @inproceedings{
     Strotherm2023FairClassification,
     author = {Strotherm, Janine and Hammer, Barbara},
@@ -30,4 +30,4 @@ You can cite corresponding paper using the following BibTex entry:
     pages = {pp. 119-133},
     series = {Lecture Notes in Computer Science}
 }
-"""
+```
