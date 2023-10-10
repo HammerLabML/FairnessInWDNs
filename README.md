@@ -17,4 +17,17 @@ in the command line generates the `scenarios` folder which is used in the `2_Dat
 All requirements for the whole project are listed in the `Implementation/requirements.txt` file. Note that the requirements listed in the `Implementation/1_FeatureGeneration/requirements.txt` file correspond to the requirements of the previous version of the [atmn](https://github.com/HammerLabML/atmn) package only.
 
 ## How To Cite
-tba
+You can cite corresponding paper using the following BibTex entry:
+"""
+@inproceedings{
+    Strotherm2023FairClassification,
+    author = {Strotherm, Janine and Hammer, Barbara},
+    title = {{Fairness-Enhancing Ensemble Classification in Water Distribution Networks}},
+    year = {2023},
+    publisher = {Springer},
+    booktitle = {Proceedings of the 17th International Work-Conference on Artificial Neural Networks (IWANN)},
+    volume = {14134},
+    pages = {pp. 119-133},
+    series = {Lecture Notes in Computer Science}
+}
+"""
