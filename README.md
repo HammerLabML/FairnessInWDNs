@@ -13,8 +13,9 @@ The data required for these methods are stored and can be generated using the `1
 
         python ./ScenarioGenerator.py ./samples/config_leaks.xml ./scenarios
 
-    in the command line generates the `scenarios` folder which is used in the `2_DataGeneration` subfolder. 
--   The subfolder `2_DataGeneration` holds the data which is used in the `3_DataUsage` subfolder. 
+    in the command line generates the `scenarios` folder.
+-   The `scenarios` in turn is used in the `2_DataGeneration` subfolder.
+-   The subfolder `2_DataGeneration` holds the data. 
     For reproduceability, 
     running the `DataGeneration.ipynb` notebook generates the data and stores it in (these) excel files which are also included in this folder. 
 -   The excel files in turn are used in the `3_DataUsage` subfolder. 
